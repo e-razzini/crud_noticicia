@@ -1,0 +1,49 @@
+
+
+header{
+
+    text-transform: uppercase;       
+    grid-area:header;
+    
+    height:100%;
+    text-align:justify; 
+    list-style:none;
+    text-decoration:none;  
+    background-color:#4e4e55;    
+    padding:15px;
+}
+
+
+
+.header::after {
+    display: inline-block;  
+    content:'';
+    width:100%;
+}
+.header-item {
+    
+    align-content: center;
+    display:inline-block;
+    width:auto;  
+    padding-bottom: 10px;
+
+}
+.header-item_busca {
+    margin-right:3% ;
+}
+.header-item_page a {
+    text-decoration:none;  
+    }
+#lupa {
+        
+    width: 40px;
+    height:45px;
+    background:url('./icon-search.svg')no-repeat center center ;
+    position: absolute;
+    border:none;
+    text-decoration: none;
+    top:5;
+    right: 10px;
+    text-indent: -150px;
+    opacity: .3;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    background-color: rgb(94, 94, 102);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.busca {
+  height:20px !important;
+}
+.container {
+    /*
+  organização do Grid
+  */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    padding: 0px;
+    /*
+   espaçamentos internos
+   grid-gap: 10 10;
+  */
+    /* #####################################
+     Aqui trabalha com areas do template
+  */
+    grid-template-areas: "header" "main" "footer";
+}
+
+@media screen and (max-width: 50vh) {
+  .container{
+
+     grid-template-rows: 50vh 20vh 20vh;
+  }
+  header {
+    margin-bottom:2% ;
+  }
+
+}
+
+@media screen and (min-width: 100vh) {
+  
+
+}
+

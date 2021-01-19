@@ -1,0 +1,106 @@
+main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+   
+
+    /* 
+    text-align: justify;
+      inicina na coluna um e vai ate a tres
+
+       grid-column-start:1 ;
+      grid-column-end: 3;
+
+      assim tbm funciona 
+      grid-colum: 1/3;
+    
+    */
+
+    /* alinhamento interno */
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+
+    
+}
+
+.container_cadastro_categoria {
+  text-align: center;
+  background-color: #4e4e55;
+  border-radius:10px ;
+  padding:3%;
+}
+.container_cadastro_noticia {   
+  text-align: center;
+  width:50%;
+  background-color: #4e4e55;
+  border-radius:10px ;
+  padding: 3%;
+}
+.container_acesso_noticia {
+  text-align: center;
+  width:50%;
+  background-color: #4e4e55;
+  border-radius:10px ;
+  padding: 3%;
+}
+
+.cadastro_categoria label,
+input {
+  overflow: hidden;
+  text-align: center;
+  font-size: 25px;
+  display: inline-block;
+  width:90%;
+  height: 35px;
+  text-decoration: underline;
+}
+.cadastro_categoria button {
+  background-color: rgb(73, 111, 172);
+  margin-top:3%;
+  width: 50%;
+  height: 45px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+ 
+}
+
+.cadastro_noticia label,
+input {
+  font-size: 25px;
+  display: inline-block; 
+  text-decoration: underline;
+}
+.cadastro_noticia button {
+  margin-top: 3%;
+  width: 50%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgb(73, 111, 172);
+  color: #fff;
+  line-height: 20px;
+  font-size: 25px;
+}
+.cadastro_noticia select,
+option {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+}
+
+
+.acesso_noticia button {
+  margin-top: 1%;
+  width: 60%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgb(73, 111, 172);
+  color: #fff;
+  line-height: 20px;
+  font-size: 25px;
+}

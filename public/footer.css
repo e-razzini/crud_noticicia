@@ -1,0 +1,17 @@
+footer {
+    background-color: #4e4e55;
+    grid-area: footer;
+    height: 100%;
+    /* 
+    inicina na coluna um e vai ate a tres
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    assim tbm funciona 
+      grid-colum: 1/3;
+    
+    */
+    text-align: center;
+    text-transform: uppercase;
+    color: #ece5e5;
+}
