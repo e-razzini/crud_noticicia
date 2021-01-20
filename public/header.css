@@ -4,18 +4,20 @@ header{
 
     text-transform: uppercase;       
     grid-area:header;
+    text-align:justify; 
+
+    background-color:#4e4e55;   
     
     height:100%;
-    text-align:justify; 
     list-style:none;
     text-decoration:none;  
-    background-color:#4e4e55;    
-    padding:15px;
+    
 }
 
 
 
 .header::after {
+    
     display: inline-block;  
     content:'';
     width:100%;
@@ -43,7 +45,7 @@ header{
     border:none;
     text-decoration: none;
     top:5;
-    right: 10px;
+    right: 15px;
     text-indent: -150px;
     opacity: .3;
 }

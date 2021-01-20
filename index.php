@@ -10,26 +10,7 @@ $arrayNoticias = [];
 $todasNoticias = $noticias->listarNoticia();
 
 $arrayNoticias = $todasNoticias;
-/*
-function totalNoticias($todasNoticias){
-    $outPut ="";
-    foreach($todasNoticias as $value){
 
-        $outPut .='<div class="container_cards">';
-        $outPut .= '<div class="cards">';
-        $outPut .='<h1 class="card_item">'. $value['titulo'] .'</h1>';
-        $outPut .='<p class="card_item">'. $value['noticia'] .'</p>';
-        $outPut .='<p class="card_item">'. $value['nome_categoria'] .'</p>';
-        $outPut .='<p class="card_item">'. $value['data_da_noticia'] .'</p>';
-        $outPut .='<a href="./admin/AcessoNoticia.php?id_noticia='.$value['id_noticia'] .'">';
-        $outPut.= '<button class="card_btn-acesso">Acessar noticia</button></a>';       
-        $outPut .='</div>';
-        $outPut .='</div>';
-    }
-    return $outPut;
-}
-<?php echo totalNoticias($arrayNoticias);?>  
-*/
 ?>
 
 <?php foreach ($arrayNoticias as $noticia) { ?>

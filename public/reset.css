@@ -25,8 +25,8 @@ a {
   */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    padding: 0px;
+    grid-template-rows: 20vh 70vh 20vh;
+ 
     /*
    espaçamentos internos
    grid-gap: 10 10;
@@ -37,16 +37,30 @@ a {
     grid-template-areas: "header" "main" "footer";
 }
 
-@media screen and (max-width: 70vh) {
+@media screen and (min-width: 50vh) {
   .container{
-     grid-template-rows: 20vh 70vh 10vh;
-  }
+     grid-template-rows: 22vh  210vh 10vh;
+    }
   
-
 }
 
+@media screen and (min-width: 75vh) {
+  
+  .container{
+    grid-template-rows: 20vh 210vh 10vh;
+   }
+}
+@media screen and (min-width: 90vh) {
+  
+  .container{
+    grid-template-rows: 20vh 210vh 10vh;
+   }
+}
 @media screen and (min-width: 100vh) {
   
-
+  .container{
+    grid-template-rows: 20vh 140vh 10vh;
+   }
 }
+
 
