@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud </title>
+    <link rel="stylesheet" href="../public/acessoNoticia.css">
     <link rel="stylesheet" href="../public/reset.css">
     <link rel="stylesheet" href="../public/header.css">
     <link rel="stylesheet" href="../public/main.css">

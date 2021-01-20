@@ -37,14 +37,11 @@ a {
     grid-template-areas: "header" "main" "footer";
 }
 
-@media screen and (max-width: 50vh) {
+@media screen and (max-width: 70vh) {
   .container{
-
-     grid-template-rows: 50vh 20vh 20vh;
+     grid-template-rows: 20vh 70vh 10vh;
   }
-  header {
-    margin-bottom:2% ;
-  }
+  
 
 }
 

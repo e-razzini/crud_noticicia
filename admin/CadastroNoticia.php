@@ -10,19 +10,22 @@ $datas = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 $cat = new Categoria();
 $todasCategorias = $cat->listarCategoria();
 
-if ($dados) {
+if (isset($dados['id_noticia'])){
 
     $n = new Noticia();
 
-    $notice = $n->listarUmaNoticia($dados['edit_noticia']);
-
-    foreach ($notice as $noticeValue) {
+    $notice = $n->listarUmaNoticia($dados['id_noticia']);
+      
+    foreach ($notice as $key ) {
+        
     }
+   
 } else {
-    $noticeValue['titulo'] = "";
-    $noticeValue['noticia'] = "";
-    $noticeValue['categoria_id'] = "";
-    $noticeValue['id_noticia'] = "";
+    
+    $key['titulo'] = "";
+    $key['noticia'] = "";
+    $key['categoria_id'] = "";
+    $key['id_noticia'] = "";
 }
 
 ?>
@@ -38,9 +41,9 @@ if ($dados) {
                     <label for="titulo">titulo</label>
                 </div>
                 <div>
-                    <input type="text" name="titulo" id="titulo" value="<?php echo $noticeValue['titulo'] ?>">
+                    <input type="text" name="titulo" id="titulo" value="<?php echo $key['titulo'] ?>">
                 </div>
-                <input type="hidden" name="id_noticia" value="<?php echo $noticeValue['id_noticia'] ?>">
+                <input type="hidden" name="id_noticia" value="<?php echo $key['id_noticia'] ?>">
                 <div>
                     <div>
 
@@ -62,7 +65,7 @@ if ($dados) {
                     <label for="noticia">Noticia</label>
                 </div>
                 <div>
-                    <textarea name="noticia" id="noticia" rows="5" cols="93"><?php echo $noticeValue['noticia'] ?></textarea>
+                    <textarea name="noticia" id="noticia" rows="5" cols="93"><?php echo $key['noticia'] ?></textarea>
                 </div>
                 <div>
                     <button type="submit" name="enviar">Enviar</button>
