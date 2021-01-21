@@ -1,5 +1,4 @@
 
-
 header{
 
     text-transform: uppercase;       
@@ -13,39 +12,34 @@ header{
     text-decoration:none;  
     
 }
+.header {
 
+    height: 100%;
+    width: 100%;
 
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
 
-.header::after {
-    
-    display: inline-block;  
-    content:'';
-    width:100%;
-}
-.header-item {
-    
-    align-content: center;
-    display:inline-block;
-    width:auto;  
-    padding-bottom: 10px;
+    justify-content:space-around;
+    align-content:center;
+    align-items: center;
+
 
 }
-.header-item_busca {
-    margin-right:3% ;
-}
-.header-item_page a {
-    text-decoration:none;  
-    }
+
+
+
 #lupa {
         
-    width: 40px;
+    width: 45px;
     height:45px;
-    background:url('./icon-search.svg')no-repeat center center ;
-    position: absolute;
+    background:url('./icon-search.svg')no-repeat center center ;  
     border:none;
     text-decoration: none;
-    top:5;
-    right: 15px;
     text-indent: -150px;
     opacity: .3;
+    position: absolute;
+    top:7%;
+    right:12%;
 }

@@ -3,7 +3,7 @@ main {
     height:100%;
     width: 100%;
     
-
+      
     /* 
     text-align: justify;
       inicina na coluna um e vai ate a tres
@@ -25,55 +25,48 @@ main {
 
     
 }
-
 .container_cadastro_categoria {
-  text-align: center;
+  padding: 20px 20px;
   background-color: #4e4e55;
   width: 60%;
-  height: 50%;
+  height: 15%;
+  
 }
 .container_cadastro_noticia {   
-  text-align: center;
+  padding:20px 20px ;
   width:50%;
+  height: 26%;
   background-color: #4e4e55;
-  border-radius:10px ;
 }
-.container_acesso_noticia {
-  text-align: center;
-  width:60%;
-  background-color: #4e4e55;
- 
-}
-
-.cadastro_categoria label,
+.cadastro_categoria 
 input {
-  overflow: hidden;
-  text-align: center;
+    
   font-size: 25px;
   display: inline-block;
-  width:90%;
-  height: 35px;
-  text-decoration: underline;
+  width:80%;
+  height:35px;
+  
 }
 .cadastro_categoria button {
   background-color: rgb(73, 111, 172);
   margin-top:3%;
-  width:95%;
+  width:81%;
   height: 35px;
   
   color: #fff;
   font-size: 20px;
- 
+  
 }
-
 .cadastro_noticia label,
 input {
+  width: 100%;
   font-size: 25px;
   display: inline-block; 
   text-decoration: underline;
 }
 .cadastro_noticia button {
   margin-top: 3%;
+  margin-left: 6%;
   width: 90%;
   height: 35px;
   background-color: rgb(73, 111, 172);
@@ -84,18 +77,16 @@ input {
 .cadastro_noticia select,
 option {
   display: inline-block;
-  width: 90%;
+  width: 101%;
+  height: 40px;
+  font-size: 15px;
+}
+.cadastro_noticia textarea {
+  display: inline-block;
+  width: 100%;
   height: 40px;
   font-size: 15px;
 }
 
 
-.acesso_noticia button {
-  margin-top: 1%;
-  width: 60%;
-  height: 35px;
-  background-color: rgb(73, 111, 172);
-  color: #fff;
-  line-height: 20px;
-  font-size: 25px;
-}
+

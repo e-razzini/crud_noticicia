@@ -5,9 +5,8 @@
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-  
+    text-align: justify;
     }
- 
 .cards {
   display: flex;
   flex-direction: column;
@@ -16,7 +15,7 @@
   background-color:#4e4e55 ; 
 
   width:350px;
-  height:500px;
+  height:350px;
   text-align: center;
   margin: 5px;
   
@@ -33,5 +32,20 @@
     background-color: rgb(73, 111, 172);
     color: #fff;
     font-size: 18px;
+}
+.container_acesso_noticia {
+  text-align: center;
+  width:60%;
+  background-color: #4e4e55;
+ 
+}
+.acesso_noticia button {
+  margin-top: 1%;
+  width: 60%;
+  height: 35px;
+  background-color: rgb(73, 111, 172);
+  color: #fff;
+  line-height: 20px;
+  font-size: 25px;
 }
 
